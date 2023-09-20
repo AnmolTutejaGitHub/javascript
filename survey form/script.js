@@ -14,12 +14,11 @@ const formFilled=function(box){
     // If all fields are filled, return true
     return true;}
 
-//Now add Functionality to direct to another WebPage
+//Functionality to open button.html
     btn.addEventListener('click',function(){
-    //when all fields filled button will work
     if(formFilled(box)){
         const file = './button.html';
-        // Open the file URL in a new tab or window
+        // Open the file in a new tab or window
         window.open(file, '_blank');  //blank will open in known tab
     } else{
     {
