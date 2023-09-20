@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Project</title>
+</head>
+<link rel="stylesheet" href="./style.css">
+</link>
+
+<body>
+    <img src="">
+    <header>
+        <h1>TALENT HUNT</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Register</a>
+        <a href="#">Profile</a>
+        <a href="#">Updates</a>
+    </nav>
+    <div class="container">
+        <h2 class="Registeration">Registeration Form</h2>
+        <form>
+            <h2>FILL YOUR DETAILS:</h2>
+            <HR/><BR/>
+            <label for="Name">Name</label>
+            <input class="box" type="text" id="Name" name="Name" placeholder="Enter Your First Name">
+            <label for="Surname">Surname (if applicable)</label>
+            <input class="box" type="text" id="Surname" name="Surname" placeholder="Enter Your Surname">
+            <label for="Age">Age</label>
+            <input class="box" type="number" id="Agw" name="Age" placeholder="Enter Your Age">
+            <label for="Phone">Phone number</label>
+            <input class="box" type="number" id="Phone" name="Phone" placeholder="Enter Your Phone Number">
+            <label for="password">Password</label>
+            <input class="box" type="password" id="password" name="password" placeholder="Set a password">
+            
+            <p id="question1">SELECT YOUR STREAM :</p>
+            <label>
+                <input type="radio" name="options" value="B.E."> B.E.
+                <div class="dropdown">
+                    <select>
+                        <option>CSE</option>
+                        <option>CSE AI</option>
+                        <option>ECE</option>
+                        <option>CIVIL</option>
+                        <option>Mechatronics</option>
+                        <option>Mechanical</option>
+                        <option>CSBS</option>
+                    </select>
+                </div>
+            </label>
+            <BR/>
+            <label>
+                <input type="radio" name="options" value="B.ARCH.">B.ARCH
+                <div class="dropdown">
+                    <select>
+                        <option>INTERIOR</option>
+                        <option>BUILDINGS</option>
+                        <options>LANDSCAPE</options>
+                        <option>DESIGN APPLICATIONS</option>
+                        <option>PLANNING</option>
+                        <OPTION>THEORY OF STRUCTURES</OPTION>
+                    </select>
+                </div>
+            </label>
+        
+
+            <P name="question3">ADD SOME DETAILS ABOUT YOU THAT WILL HELP US TO KNOW WHAT KIND OF PERSON YOU ARE...</p>
+            <textarea maxlength="50" name="question3" rows="4" placeholder="drag from bottom right to resize the box"></textarea >
+            <br/>
+            <br/>
+           <div id="href">
+
+            <a href="https://www.chitkara.edu.in/">click here to visit our official site</a></div>
+            <BR/>
+        <P ALIGN="CENTER">
+            <button type="submit">Submit</button>
+        </P>
+        
+        </form>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
