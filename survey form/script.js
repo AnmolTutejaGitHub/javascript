@@ -6,7 +6,7 @@ const box=document.querySelectorAll('.box') //.textContent.trim(); //trim() to r
 //Function to check if form is filled or Not 
 const formFilled=function(box){
     for(let i=0;i<box.length;i++){
-            filled=box[i].textContent.trim()   //if empty string then filled='' which is falsy value 
+           let filled=box[i].value.trim()   //if empty string then filled='' which is falsy value 
             if (filled === '') {
                 return false;
             }
