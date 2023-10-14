@@ -42,7 +42,7 @@ rest
 
 
 //size
-consoler.log(rest.size)
+console.log(rest.size)
 //rest.clear()
 
 //we can use arrays or objects as map keys
