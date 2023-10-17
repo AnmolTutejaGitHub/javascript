@@ -12,7 +12,7 @@ console.log(arr.slice(-1)) // ['e']
 
 
 //we can create copy of an array
-console.log(slice()) //['a','b','c','d','e']
+console.log(arr.slice()) //['a','b','c','d','e']
 //we can also create copy of an array using spread operator
 console.log([...arr])
 
