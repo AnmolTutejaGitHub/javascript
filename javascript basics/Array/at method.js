@@ -1,6 +1,7 @@
 //at method
 
-const arr=[23,11,64]
+//const arr=[23,11,64]
+let arr=[23,11,64]
 
 //To get an element out of an array we traditionally do :
 console.log(arr[0]) //23
