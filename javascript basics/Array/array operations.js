@@ -12,7 +12,7 @@ console.log(friends);
 //remove elements from array
 //pop method -- removes last  element of the array and returns the removed element 
 
-const poppped=friends.pop();
+const popped=friends.pop();
 console.log(popped);
 console.log(friends)
 
