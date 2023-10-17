@@ -46,3 +46,30 @@ movements.forEach(function(movement,i,arr){
 
 //remember : You can't break out of forEach loop , so continue and break statements won't work for forEach loop
 //forEach will always loop over the entire array 
+
+//for each method for maps
+const currencies=new Map([
+    ["USD","United States dollar"],
+    //key , value
+    ["EUR","Euro"],
+    ["GBP",'Pound Sterling'],
+]);
+
+currencies.forEach(function(value,key,map)
+    {
+          console.log(`${key}:${value}`)
+    });
+
+
+    //set
+    const currenciesUnique=new Set(["USD","GBP","INR","EUR","INR","USD"])
+    console.log(currenciesUnique)
+
+    currenciesUnique.forEach(function(value,key,Set){
+        console.log(`${key}:${value}`)
+    })
+    // USD:USD
+    //GBP;GBP
+    //INR:INR
+    //EUR:EUR
+    //IN SETS argument value and argument key is same ie refer to same value like USD 
