@@ -26,3 +26,13 @@ for (const mov of movements) balance3+=mov;
 console.log(balance3) //3840
 
 
+//maximum value of movements array
+//acc will keep track of current maximum
+const max=movements.reduce((acc,mov)=>{
+    if(acc>mov)
+    return acc;
+else
+    return mov;  //whatever return will ne next iteration value of acumulator
+},movements[0])
+console.log(max) //3000
+
