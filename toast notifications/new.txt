@@ -1,0 +1,91 @@
+1)
+display:flex;
+   align-items: flex-end;
+   flex-direction: column;
+   overflow: hidden; explain this 
+ChatGPT
+The CSS code you provided is using the Flexbox layout model to style an element. Let's break down each property:
+
+display: flex;
+
+This property is used to create a flex container, establishing a new flex context for its direct children. In other words, it enables the use of the Flexbox layout for the children of the element.
+align-items: flex-end;
+
+This property defines the default behavior for how items are aligned along the cross-axis of the flex container. In this case, it sets the alignment to flex-end, which means the items (children) will be aligned to the end of the cross-axis (bottom in a column direction).
+flex-direction: column;
+
+This property establishes the main-axis and the direction of the flex container. In this case, it sets the main axis to be vertical (column), meaning the items will be laid out in a column from top to bottom.
+overflow: hidden;
+
+This property is used to control the clipping of the content that overflows the element's box. In this context, it sets overflow to hidden, meaning any content that overflows the element will be hidden.
+In summary, the combination of these properties is configuring a flex container with a vertical (column) layout. The items inside the container will be aligned to the bottom of the container, and any content that overflows the container will be hidden. This can be useful for creating specific layout designs where you want a column of items to be aligned to the bottom of the container, and you don't want any overflow to be visible
+
+
+
+2)box-shadow: 0 0 20px rgba(0,0,0.3); explain 
+ChatGPT
+The box-shadow property in CSS is used to add shadow effects to an element. The syntax for the box-shadow property is as follows:
+
+
+box-shadow: [horizontal offset] [vertical offset] [blur radius] [spread radius] [color];
+In the code you provided:
+
+
+box-shadow: 0 0 20px rgba(0,0,0,0.3);
+Breaking it down:
+
+0 (horizontal offset): This specifies that the shadow should not have any horizontal offset, meaning the shadow will be directly beneath the element.
+
+0 (vertical offset): Similarly, this specifies that the shadow should not have any vertical offset, so it will be directly below the element.
+
+20px (blur radius): This value determines the amount of blur applied to the shadow. In this case, the shadow will have a blur of 20px, creating a softer and more spread-out shadow.
+
+rgba(0,0,0,0.3) (color): This sets the color of the shadow. It's using an RGBA color value, where 0, 0, 0 represents black (RGB values), and 0.3 represents the alpha channel, controlling the transparency of the shadow. The alpha value of 0.3 means the shadow will be somewhat transparent, allowing some of the background to show through.
+
+So, in summary, the box-shadow property in this example is creating a subtle, soft, and slightly transparent shadow directly beneath the element, making it visually pop or giving it a sense of elevation on the page.
+
+
+
+
+
+3).toast::after 
+ChatGPT
+In CSS, when you see a selector like .toast::after, it is targeting the pseudo-element ::after of elements with the class toast. Pseudo-elements are used to style a specific part of an element, such as its content before or after the actual content of the element.
+
+Here's a breakdown of how you might use .toast::after in CSS:
+
+.toast::after {
+  /* Styles for the pseudo-element */
+  content: " "; /* The content property is required for the pseudo-element to generate. It can be empty. */
+  display: block; /* Ensures that the generated content is treated as a block-level element. */
+  clear: both; /* Clears any floats before the pseudo-element. You may use other values like 'left', 'right', or 'both'. */
+  /* Other styles for the pseudo-element */
+}
+In this example:
+
+content: " ";: This property is required for the pseudo-element to generate. It is often set to an empty string or a space.
+
+display: block;: This ensures that the generated content is treated as a block-level element. This can be useful when you want to apply block-level styling to the pseudo-element.
+
+clear: both;: This property is often used when dealing with floated elements. It clears any floats that precede the pseudo-element. The value 'both' means clear both left and right floats.
+
+You can then add additional styles within the .toast::after rule to customize the appearance of the pseudo-element. The actual styles will depend on the specific design and requirements of your application.
+
+Here's a simple example in the context of a toast notification:
+
+
+.toast {
+  position: relative;
+  /* Other styles for the main toast element */
+
+}
+
+.toast::after {
+  content: " ";
+  display: block;
+  clear: both;
+  height: 10px;
+  background-color: #ffcc00; /* Example background color for the pseudo-element */
+  /* Other styles for the pseudo-element */
+}
+In this example, the ::after pseudo-element is being used to add a colored bar at the bottom of the .toast element. This is just an illustrative example, and the actual styles would depend on the specific design you're aiming for.
