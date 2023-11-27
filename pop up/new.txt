@@ -1,0 +1,30 @@
+1)vh:
+n CSS, vh stands for viewport height. The 100vh unit represents 100% of the viewport height. The viewport is the visible portion of a web page within the browser window.
+
+So, when you use 100vh, you are setting the height of an element to be equal to the full height of the viewport. This is commonly used to make elements take up the entire height of the screen, for example, to create a full-screen background or a section that spans the entire height of the viewport.
+
+Here's an example:
+
+.full-height-section {
+  height: 100vh;
+  background-color: lightblue;
+  /* Other styles go here */
+}
+In this example, the .full-height-section class sets the height of the element to be 100% of the viewport height, and it gives it a light blue background color. Adjust the styles and properties based on your specific design needs.
+
+
+2)User
+translate transform(-50%,-50%
+)
+ChatGPT
+The CSS transform property is used to translate or move an element. The transform function with translate can be used to specify the translation along the X and Y axes. In your case, transform(-50%, -50%) indicates a translation of 50% of the element's width to the left and 50% of its height upward. This is often used in combination with position: absolute to center an element within its containing element.
+
+Here's an example of how you might use it in CSS:
+
+.centered-element {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+This CSS would be applied to an HTML element with the class centered-element to center it within its containing element.
