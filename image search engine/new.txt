@@ -1,0 +1,44 @@
+1)why neeed to specify type of button 
+In HTML, specifying the type of a <button> element is important because it determines the default behavior of the button. The type attribute allows you to define whether the button should submit a form, reset a form, or act as a regular button with no special behavior. The type attribute can take on three values:
+
+Submit (default):
+
+<button type="submit">Submit</button>
+When the type is set to "submit," the button will submit the form that it is part of when clicked. This is commonly used for form submission.
+
+Reset:
+
+
+<button type="reset">Reset</button>
+If the type is set to "reset," the button will reset the form's input fields to their default values when clicked. This can be useful for allowing users to clear the form.
+
+Button:
+
+
+<button type="button">Click me</button>
+If the type is set to "button" (or if the type attribute is omitted, as "button" is the default), the button will have no special behavior associated with form submission or resetting. It's often used in conjunction with JavaScript to define custom behaviors when the button is clicked.
+
+By specifying the type attribute, you are explicitly defining the role and behavior of the button, which can help in ensuring the expected functionality. If the type attribute is omitted, some browsers might default to treating the button as "submit," which could lead to unexpected behavior if the button is not intended to submit a form.
+
+
+
+
+2) margin-auto :
+Setting margin: auto; in CSS is a way to horizontally center an element within its containing element. This is often used with block-level elements, such as <div> elements.
+
+Here's a brief explanation of how it works:
+
+.centered-element {
+  width: 50%; /* or any other width */
+  margin: auto;
+}
+In the example above, the margin: auto; rule is applied to the element with the class centered-element. This rule instructs the browser to automatically calculate equal margins on the left and right sides of the element, effectively centering it horizontally within its containing element.
+
+This technique is particularly useful when you want to center a block-level element whose width is less than that of its containing element.
+
+It's important to note that margin: auto; for horizontal centering only works when the element has a specified width (or max-width) and the containing element has enough width to accommodate the centered element. Additionally, this technique is commonly used for block-level elements, and it may not have the same effect on inline or inline-block elements.
+
+
+
+
+
