@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translation</title>
+    <style>
+   #google_translate_element{
+  display: flex;
+ margin-top: 100px;
+ margin-bottom: -100px;
+ width:160px;
+ margin-left: auto;
+ justify-content: end;
+ /* background-color: #000; */
+ /* background: linear-gradient(to left, #379683 0%, #809637 100%); */
+}
+
+    </style>
+</head>
+<body>
+    <div id="google_translate_element"></div>
+    
+<h1>Basic demo</h1>
+
+
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<script>
+
+function googleTranslateElementInit(){
+    new google.translate.TranslateElement(
+        {pageLanguage:'en'},
+        'google_translate_element'
+    )
+  }
+
+</script>
+</body>
+</html>
+
