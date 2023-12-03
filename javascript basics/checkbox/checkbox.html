@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checkbox</title>
+    <style>
+        *{
+            background-color: blueviolet;
+            text-align: center;
+        }
+
+        label{
+            color:#fff;
+            font-size: 20px;
+        }
+
+        input{
+            color:green;
+            cursor: pointer;
+        }
+
+        button{
+            color:#fff;
+            background-color:green;
+            display: block; 
+            margin: auto;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <label for="mycheckbox">checkbox</label>
+    <input type="checkbox" id="mycheckbox">
+    <button id="mybutton">submit</button>
+
+    <script>
+        document.getElementById("mybutton").onclick=function(){
+            if(document.getElementById("mycheckbox").checked==true){
+               alert("checked")
+            }else{
+                alert("pls check")
+            }
+        }
+    </script>
+</body>
+</html>
