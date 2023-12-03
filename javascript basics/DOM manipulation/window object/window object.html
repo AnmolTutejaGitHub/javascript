@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="mybtn">my button</button>
+
+    <script>
+      // window= Interface use to talk to web browser . The DOM is the property of the window
+      console.dir(window); // to see methods and properties of the window object
+
+      console.log(window.innerWidth);
+      console.log(window.innerHeight);
+      console.log(window.outerWidth);
+      console.log(window.outerHeight);
+
+      console.log(window.scrollX);
+      console.log(window.scrollY);
+
+      console.log(window.location.href);
+
+      //window.location.href = 'https://google.com';  //will drect to google
+
+      console.log(window.location.hostname);
+      console.log(window.location.pathname);
+
+      const btn = document.querySelector('#mybtn');
+      btn.addEventListener('click', () => {
+        window.open('https://google.com');
+      });
+
+      //window.close()  //will close the current page
+
+      window.confirm('press ok to continue');
+      window.print();
+    </script>
+  </body>
+</html>
